@@ -1,0 +1,31 @@
+.homeC {
+  display: grid;
+  grid-template-areas:
+    "header header "
+    "info info"
+    "footer footer";
+  height: 100vh;
+  grid-template-rows: 80px 88% 3%;
+  grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+  font-family: "Indie Flower", cursive;
+}
+
+.header {
+  grid-area: header;
+  padding-top: 17px;
+  text-align: center;
+}
+.info {
+  grid-area: info;
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
