@@ -1,10 +1,11 @@
 import React from 'react'
+import InfoGames from '../components/Games/InfoGames'
 import './Pages.css'
 
 function Games() {
     return (
         <div className='games'>
-            <h1>Games</h1>
+            <InfoGames />
         </div>
     )
 }

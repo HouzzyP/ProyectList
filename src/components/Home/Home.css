@@ -1,31 +1,38 @@
 .homeC {
-  display: grid;
-  grid-template-areas:
-    "header header "
-    "info info"
-    "footer footer";
-  height: 100vh;
-  grid-template-rows: 80px 88% 3%;
-  grid-template-columns: 1fr 1fr;
+	display: grid;
+	grid-template-areas:
+		"header header "
+		"info info"
+		"footer footer";
+	height: 100vh;
+	grid-template-rows: 1fr 6fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	padding-left: 15%;
+	padding-right: 15%;
+	gap: 15px;
 }
 
-h1 {
-  font-family: "Indie Flower", cursive;
+.titleHome {
+	font-family: "Indie Flower", cursive;
 }
 
 .header {
-  grid-area: header;
-  padding-top: 17px;
-  text-align: center;
+	grid-area: header;
+	padding-top: 17px;
+	text-align: center;
 }
 .info {
-  grid-area: info;
-  display: flex;
-  justify-content: center;
+	grid-area: info;
+	display: flex;
+	justify-content: center;
 }
 .footer {
-  grid-area: footer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	grid-area: footer;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+a {
+	list-style: none;
 }
